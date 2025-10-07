@@ -1,0 +1,273 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+}
+
+.nav-home {
+    padding: 20px;
+}
+
+.nav-aboutus {
+    padding: 20px;
+}
+
+.nav-contactus {
+    padding: 20px;
+}
+
+
+a {
+    color: white;
+    margin-left: 50px;
+}
+
+
+
+.home-div {
+    margin-left: 70px;
+    margin-top: 150px;
+}
+
+.home-heading {
+    color: rgb(209, 209, 209);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation: float 2s ease-in-out ;
+}
+@keyframes float{
+    0%{
+        transform: translatex(-30px);
+
+    }
+    /* 50%{
+        transform: translatex(20px);
+    } */
+    100%{
+        transform: translatex(0);
+    }
+}
+
+
+
+.home-para {
+    color: rgb(209, 209, 209);
+    padding-top: 20px;
+}
+
+.home-button {
+    background-color: rgb(0, 0, 66);
+    color: white;
+    border: none;
+    height: 40px;
+    margin-top: 30px;
+    transition: all 0.5s;
+}
+
+.home-button:hover{
+background-color: rgb(33, 33, 139);
+transform: scale(1.3);
+transform: rotate(40deg);
+}
+
+.home-section {
+    display: flex;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    padding: 20%;
+    border-radius: 50%;
+       animation-name: image;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+        animation-direction: alternate;
+    
+}
+
+@keyframes image{
+    0% {
+       transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+.aboutus-section {
+    padding: 20px;
+    text-align: center;
+
+    margin: 20px;
+}
+
+.aboutus-heading {
+    margin-bottom: 10px;
+}
+
+.aboutus-para {
+    text-align: center;
+}
+
+
+.skill-section {
+    display: flex;
+    margin-left: 10%;
+}
+
+
+.skill-card {
+    width: 300px;
+    border: 1px solid rgb(163, 155, 155);
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 66);
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.image{
+       width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: 0.8s all ;
+}
+.image:hover{
+transform: scale(1.1);
+
+}
+
+.card-heading:hover{
+    text-decoration: underline;
+}
+marquee {
+    background-color: rgb(0, 0, 66);
+
+}
+
+.contactus-section {
+    background-image: url("/slide-2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contactus-heading {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contactus-para {
+    text-align: center;
+
+}
+
+.information-div {
+    padding: 20px;
+
+}
+
+.Information-heading {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.email {
+    text-align: left;
+}
+
+.phone {
+    text-align: left;
+}
+
+.address {
+    text-align: left;
+}
+
+.contact-form {
+    padding: 20px;
+
+}
+
+input {
+    height: 20px;
+    width: 300px;
+}
+
+textarea {
+
+    width: 300px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(3, 3, 66);
+}
+
+/* 
+.test-div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: blueviolet;
+    color: white;
+    transition: 1s linear all;
+}
+
+
+.test-div:hover{
+    background-color: white;
+    color: blueviolet;
+    transform: scale(1.5);
+    
+} */
+
+
+.my-btn{
+    animation-name: abc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: aqua;
+    animation-direction: alternate;
+    
+}
+
+@keyframes abc {
+    0%{
+        background-color: red;
+        /* transform: translateX(100px); */
+    }
+
+    50%{
+        background-color: green;
+        /* transform: translateX(150px); */
+    }
+
+    100%{
+        background-color: blue;
+        /* transform: translateX(200px); */
+        /* transform: rotate(360deg); */
+    }
+}
